@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PharmacyModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Medicines">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Barcode" Type="nvarchar" MaxLength="10" />
+    <Property Name="Price" Type="decimal" Precision="6" Scale="2" />
+    <Property Name="HasReceipt" Type="bit" />
+    <Property Name="Count" Type="int" />
+    <Property Name="Volume" Type="int" />
+    <Property Name="UnitID" Type="int" />
+    <Property Name="Status" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MedicineToTag">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MedicineID" Type="int" />
+    <Property Name="TagID" Type="int" />
+  </EntityType>
+  <EntityType Name="Orders">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MedicineID" Type="int" />
+    <Property Name="Count" Type="int" />
+    <Property Name="OrderDate" Type="datetime" />
+    <Property Name="Price" Type="decimal" Precision="6" Scale="2" />
+  </EntityType>
+  <EntityType Name="Tags">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Units">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="20" />
+  </EntityType>
+  <Association Name="FK__Medicines__UnitI__412EB0B6">
+    <End Role="Units" Type="Self.Units" Multiplicity="0..1" />
+    <End Role="Medicines" Type="Self.Medicines" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Units">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Medicines">
+        <PropertyRef Name="UnitID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__MedicineT__Medic__4222D4EF">
+    <End Role="Medicines" Type="Self.Medicines" Multiplicity="0..1" />
+    <End Role="MedicineToTag" Type="Self.MedicineToTag" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Medicines">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="MedicineToTag">
+        <PropertyRef Name="MedicineID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__MedicineT__TagID__4316F928">
+    <End Role="Tags" Type="Self.Tags" Multiplicity="0..1" />
+    <End Role="MedicineToTag" Type="Self.MedicineToTag" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tags">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="MedicineToTag">
+        <PropertyRef Name="TagID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Orders__Medicine__440B1D61">
+    <End Role="Medicines" Type="Self.Medicines" Multiplicity="0..1" />
+    <End Role="Orders" Type="Self.Orders" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Medicines">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Orders">
+        <PropertyRef Name="MedicineID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="PharmacyModelStoreContainer">
+    <EntitySet Name="Medicines" EntityType="Self.Medicines" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MedicineToTag" EntityType="Self.MedicineToTag" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Orders" EntityType="Self.Orders" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Tags" EntityType="Self.Tags" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Units" EntityType="Self.Units" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__Medicines__UnitI__412EB0B6" Association="Self.FK__Medicines__UnitI__412EB0B6">
+      <End Role="Units" EntitySet="Units" />
+      <End Role="Medicines" EntitySet="Medicines" />
+    </AssociationSet>
+    <AssociationSet Name="FK__MedicineT__Medic__4222D4EF" Association="Self.FK__MedicineT__Medic__4222D4EF">
+      <End Role="Medicines" EntitySet="Medicines" />
+      <End Role="MedicineToTag" EntitySet="MedicineToTag" />
+    </AssociationSet>
+    <AssociationSet Name="FK__MedicineT__TagID__4316F928" Association="Self.FK__MedicineT__TagID__4316F928">
+      <End Role="Tags" EntitySet="Tags" />
+      <End Role="MedicineToTag" EntitySet="MedicineToTag" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Orders__Medicine__440B1D61" Association="Self.FK__Orders__Medicine__440B1D61">
+      <End Role="Medicines" EntitySet="Medicines" />
+      <End Role="Orders" EntitySet="Orders" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

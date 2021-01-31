@@ -1,0 +1,38 @@
+C:\Users\Samir D\source\repos\P208_Pharmacy\P208_Pharmacy\bin\Debug\P208_Pharmacy.exe.config
+C:\Users\Samir D\source\repos\P208_Pharmacy\P208_Pharmacy\bin\Debug\P208_Pharmacy.exe
+C:\Users\Samir D\source\repos\P208_Pharmacy\P208_Pharmacy\bin\Debug\P208_Pharmacy.pdb
+C:\Users\Samir D\source\repos\P208_Pharmacy\P208_Pharmacy\obj\Debug\P208_Pharmacy.csprojAssemblyReference.cache
+C:\Users\Samir D\source\repos\P208_Pharmacy\P208_Pharmacy\obj\Debug\P208_Pharmacy.Login.resources
+C:\Users\Samir D\source\repos\P208_Pharmacy\P208_Pharmacy\obj\Debug\P208_Pharmacy.Properties.Resources.resources
+C:\Users\Samir D\source\repos\P208_Pharmacy\P208_Pharmacy\obj\Debug\P208_Pharmacy.csproj.GenerateResource.cache
+C:\Users\Samir D\source\repos\P208_Pharmacy\P208_Pharmacy\obj\Debug\P208_Pharmacy.csproj.CoreCompileInputs.cache
+C:\Users\Samir D\source\repos\P208_Pharmacy\P208_Pharmacy\obj\Debug\P208_Pharmacy.exe
+C:\Users\Samir D\source\repos\P208_Pharmacy\P208_Pharmacy\obj\Debug\P208_Pharmacy.pdb
+C:\Users\Samir D\source\repos\P208_Pharmacy\P208_Pharmacy\obj\Debug\P208_Pharmacy.Dashboard.resources
+C:\Users\Samir D\source\repos\P208_Pharmacy\P208_Pharmacy\bin\Debug\EntityFramework.dll
+C:\Users\Samir D\source\repos\P208_Pharmacy\P208_Pharmacy\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Samir D\source\repos\P208_Pharmacy\P208_Pharmacy\bin\Debug\EntityFramework.xml
+C:\Users\Samir D\source\repos\P208_Pharmacy\P208_Pharmacy\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Samir D\source\repos\P208_Pharmacy\P208_Pharmacy\obj\Debug\P208_Pharmacy.AddMedicine.resources
+C:\Users\Samir D\source\repos\P208_Pharmacy\P208_Pharmacy\obj\Debug\P208_Pharmacy.csproj.CopyComplete
+C:\Users\Samir D\source\repos\P208_Pharmacy\P208_Pharmacy\obj\Debug\P208_Pharmacy.SellMedicine.resources
+C:\Users\Aspire\Desktop\P208_Pharmacy\P208_Pharmacy\bin\Debug\P208_Pharmacy.exe.config
+C:\Users\Aspire\Desktop\P208_Pharmacy\P208_Pharmacy\bin\Debug\P208_Pharmacy.exe
+C:\Users\Aspire\Desktop\P208_Pharmacy\P208_Pharmacy\bin\Debug\P208_Pharmacy.pdb
+C:\Users\Aspire\Desktop\P208_Pharmacy\P208_Pharmacy\bin\Debug\EntityFramework.dll
+C:\Users\Aspire\Desktop\P208_Pharmacy\P208_Pharmacy\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Aspire\Desktop\P208_Pharmacy\P208_Pharmacy\bin\Debug\EntityFramework.xml
+C:\Users\Aspire\Desktop\P208_Pharmacy\P208_Pharmacy\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Aspire\Desktop\P208_Pharmacy\P208_Pharmacy\obj\Debug\P208_Pharmacy.csprojAssemblyReference.cache
+C:\Users\Aspire\Desktop\P208_Pharmacy\P208_Pharmacy\obj\Debug\P208_Pharmacy.AddMedicine.resources
+C:\Users\Aspire\Desktop\P208_Pharmacy\P208_Pharmacy\obj\Debug\P208_Pharmacy.Dashboard.resources
+C:\Users\Aspire\Desktop\P208_Pharmacy\P208_Pharmacy\obj\Debug\P208_Pharmacy.Login.resources
+C:\Users\Aspire\Desktop\P208_Pharmacy\P208_Pharmacy\obj\Debug\P208_Pharmacy.Properties.Resources.resources
+C:\Users\Aspire\Desktop\P208_Pharmacy\P208_Pharmacy\obj\Debug\P208_Pharmacy.SellMedicine.resources
+C:\Users\Aspire\Desktop\P208_Pharmacy\P208_Pharmacy\obj\Debug\P208_Pharmacy.csproj.GenerateResource.cache
+C:\Users\Aspire\Desktop\P208_Pharmacy\P208_Pharmacy\obj\Debug\P208_Pharmacy.csproj.CoreCompileInputs.cache
+C:\Users\Aspire\Desktop\P208_Pharmacy\P208_Pharmacy\obj\Debug\P208_Pharmacy.csproj.CopyComplete
+C:\Users\Aspire\Desktop\P208_Pharmacy\P208_Pharmacy\obj\Debug\P208_Pharmacy.exe
+C:\Users\Aspire\Desktop\P208_Pharmacy\P208_Pharmacy\obj\Debug\P208_Pharmacy.pdb
+C:\Users\Aspire\Desktop\P208_Pharmacy\P208_Pharmacy\obj\Debug\P208_Pharmacy.AddTags.resources
+C:\Users\Aspire\Desktop\P208_Pharmacy\P208_Pharmacy\obj\Debug\P208_Pharmacy.Report.resources
